@@ -15,7 +15,7 @@ const autenticarUsuario = (email, senha) => {
     // gera o token JWT
     const token = jwt.sign(
         { id: usuario.id, email: usuario.email, nome: usuario.nome },
-        'segredo', // Substitua por uma variável de ambiente em produção
+        'segredo', 
         { expiresIn: '1h' }
     );
 
