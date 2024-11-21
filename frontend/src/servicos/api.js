@@ -1,4 +1,4 @@
-const apiBaseUrl = 'http://localhost:3001'; // Altere para o URL correto do seu backend
+const apiBaseUrl = 'http://localhost:3001'; 
 
 // Função para fazer login
 export async function login(email, senha) {
@@ -16,7 +16,7 @@ export async function login(email, senha) {
         }
 
         const dados = await resposta.json();
-        return dados; // Retorna o token e outras informações
+        return dados; 
     } catch (erro) {
         console.error('Erro:', erro);
         throw erro;
@@ -97,5 +97,6 @@ const api = {
     realizarCheckin,
     registrar
 };
+ //???????Faltou criar método post para login
 
 export default api;
